@@ -11,7 +11,17 @@ Math.floor(Math.random() * 3);
     }
 }
 
-console.log(getComputerChoice());
-console.log(getComputerChoice());
+function getHumanChoice() {
+    const chooseNum = 
+prompt("choose a number", "");
+    if(chooseNum === 0) {
+        return "rock";
+    } else if(chooseNum === 1) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+}
 
+console.log(getHumanChoice());
 
